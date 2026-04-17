@@ -1,38 +1,26 @@
-# bank-marketing-ml-model
-End-to-end ML workflow: data cleaning, feature prep, train/test split, model evaluation, and insights visualization.
-# Bank Marketing — Machine Learning Model
+# Bank Marketing — Logistic Regression Model 🏦
 
-## Overview
-Machine learning notebook built to analyze marketing campaign data, identify patterns, and generate predictions.
-
-## Steps
-- Data exploration and cleaning
-- Preprocessing and feature preparation
-- Train/test split
-- Model training and evaluation
-- Visualizations to communicate results
+End-to-end machine learning project to predict whether 
+a client will subscribe to a term deposit based on a 
+Portuguese bank's marketing campaign data.
 
 ## Tools
-Python, Pandas, NumPy, scikit-learn, Matplotlib/Seaborn
+- Python (pandas, numpy, scikit-learn, seaborn, matplotlib)
+- Jupyter Notebook
+
+## Process
+1. Exploratory Data Analysis (EDA)
+2. Correlation matrix and feature selection
+3. Encoding of categorical variables
+4. Train/test split (70/30, stratified)
+5. Logistic Regression model with class weights
+6. Evaluation: confusion matrix, accuracy, precision, recall, F1
+
 
 ## Dataset
+Bank Marketing Dataset — UCI Machine Learning Repository
 
 This project uses the Bank Marketing dataset available on Kaggle:
 
 🔗 [Bank Marketing Dataset – Kaggle](https://www.kaggle.com/datasets/volodymyrgavrysh/bank-marketing-campaigns-dataset)
 
-Please download the dataset manually and place it in:
-
-`data/bank-additional-full.csv`
-
-Note: The dataset is not included in this repository due to licensing and size considerations.
-
-## How to run
-Open the notebook and ensure the dataset is available at:
-
-`data/bank-additional-full.csv`
-
-Make sure the file is loaded using:
-
-```python
-pd.read_csv("data/bank-additional-full.csv", sep=";")
